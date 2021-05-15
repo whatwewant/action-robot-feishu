@@ -12,4 +12,4 @@ COPY . .
 
 RUN  yarn build
 
-CMD  node /app/lib/action.js
+# CMD  node /app/lib/action.js
