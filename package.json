@@ -1,6 +1,6 @@
 {
   "name": "@zcorky/action-robot-feishu",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "feishu robot github action",
   "main": "lib/index.js",
   "repository": "https://github.com/whatwewant/action-robot-feishu",
