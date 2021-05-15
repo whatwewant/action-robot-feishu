@@ -1,5 +1,10 @@
 name: 'Feishu Robot'
 description: 'A simple feishu robot by github action'
+author: 'Zero <GitHub: whatwewant>'
+branding:
+  icon: 'message-square'
+  color: 'green'
+color:
 inputs:
   who-to-greet:
     description: 'Who to greet'
