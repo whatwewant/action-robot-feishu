@@ -14,8 +14,8 @@
   "scripts": {
     "commit": "cz",
     "fmt": "yarn eslint && prettier --write ./**/*.ts",
-    "clean": "rm -rf lib && rm -rf node_modules",
-    "build": "tsc",
+    "clean": "rm -rf lib",
+    "build": "yarn run clean && tsc",
     "test": "jest",
     "coverage": "codecov",
     "eslint": "eslint ./**/*.ts --fix",
