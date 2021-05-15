@@ -24,6 +24,8 @@ outputs:
 runs:
   using: docker
   image: Dockerfile
+  args:
+    - node /app/lib/action.js
   env:
     ACTION_URL: ${{ inputs.url }}
     ACTION_TITLE: ${{ inputs.title }}

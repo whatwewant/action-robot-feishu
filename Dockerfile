@@ -1,6 +1,6 @@
 FROM node:14-alpine
 
-WORKDIR /github/workspace
+WORKDIR /app
 
 COPY package.json .
 
@@ -12,4 +12,4 @@ COPY . .
 
 RUN  yarn build
 
-CMD  node ./lib/action.js
+CMD  node /app/lib/action.js
