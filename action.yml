@@ -22,5 +22,10 @@ outputs:
   time: # id of output
     description: 'The time we greeted you'
 runs:
-  using: 'node12'
-  main: 'lib/action.js'
+  using: docker
+  image: Dockerfile
+  env:
+    ACTION_URL: ${{ inputs.url }}
+    ACTION_TITLE: ${{ inputs.title }}
+    ACTION_TEXT: ${{ inputs.text }}
+    ACTION_AT: ${{ inputs.at }}
