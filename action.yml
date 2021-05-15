@@ -6,10 +6,18 @@ branding:
   color: 'green'
 color:
 inputs:
-  who-to-greet:
-    description: 'Who to greet'
+  url:
     required: true
-    default: 'World'
+    description: web hook url
+  title:
+    required: true
+    description: the msg title
+  text:
+    required: true
+    description: the msg body
+  at:
+    required: false
+    description: the msg metion to
 outputs:
   time: # id of output
     description: 'The time we greeted you'
