@@ -1,4 +1,4 @@
-import * as core from '@actions/core';
+// import * as core from '@actions/core';
 
 import { IActionInput } from './type';
 import { sendMessage } from './index';
@@ -27,9 +27,11 @@ export async function sendAction(): Promise<void> {
     const actionInput = getActionInput();
     const response = await sendMessage(actionInput);
 
-    core.debug(response);
+    console.log('info:', response);
+    // core.debug(response);
   } catch (error) {
-    core.setFailed(error.message);
+    // core.setFailed(error.message);
+    console.error('error:', error);
   }
 }
 
