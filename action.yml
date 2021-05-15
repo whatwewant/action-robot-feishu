@@ -24,9 +24,9 @@ outputs:
 runs:
   using: docker
   image: Dockerfile
-  entrypoint: 'sh -c'
-  args:
-    - node /app/lib/action.js
+  # entrypoint: 'sh -c'
+  # args:
+  #   - node /app/lib/action.js
   env:
     ACTION_URL: ${{ inputs.url }}
     ACTION_TITLE: ${{ inputs.title }}

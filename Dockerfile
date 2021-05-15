@@ -13,3 +13,5 @@ COPY . .
 RUN  yarn build
 
 # CMD  node /app/lib/action.js
+
+ENTRYPOINT [ "node", "/app/lib/action.js" ]
