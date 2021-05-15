@@ -1,0 +1,103 @@
+{
+  "name": "@zcorky/action-robot-feishu",
+  "version": "0.0.0",
+  "description": "feishu robot github action",
+  "main": "lib/index.js",
+  "repository": "https://github.com/whatwewant/action-robot-feishu",
+  "author": "Zero <tobewhatwewant@gmail.com>",
+  "keywords": [
+    "action",
+    "robot",
+    "feishu"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "commit": "cz",
+    "fmt": "yarn eslint && prettier --write ./**/*.ts",
+    "clean": "rm -rf lib && rm -rf node_modules",
+    "build": "tsc",
+    "test": "jest",
+    "coverage": "codecov",
+    "eslint": "eslint ./**/*.ts --fix",
+    "prepare": "husky install"
+  },
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "@actions/core": "^1.2.7",
+    "@actions/github": "^5.0.0",
+    "@zcorky/tsconfig": "^0.0.3",
+    "@zodash/doreamon": "^0.4.51"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.3.0",
+    "@typescript-eslint/eslint-plugin": "^4.23.0",
+    "@typescript-eslint/parser": "^4.23.0",
+    "codecov": "^3.8.2",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.23.1",
+    "husky": "^6.0.0",
+    "jest": "^26.6.3",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.0",
+    "ts-jest": "^26.5.6",
+    "typescript": "^4.2.4"
+  },
+  "lint-staged": {
+    "**/*.ts": [
+      "echo 'lint stage run'",
+      "prettier --write --ignore-unknown",
+      "eslint --fix"
+    ],
+    "*.{json.css,md,yml,yaml}": [
+      "prettier --write"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "jest": {
+    "roots": [
+      "__tests__"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": ".*\\.(spec|test)\\.(ts|tsx)$",
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx"
+    ],
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 0,
+        "functions": 0,
+        "lines": 0,
+        "statements": 0
+      }
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
