@@ -1,6 +1,19 @@
 # GitHub Actions for Feishu Robot
 
+![https://github.com/whatwewant/action-robot-feishu](https://img.shields.io/github/v/release/whatwewant/action-robot-feishu)
+![https://github.com/whatwewant/action-robot-feishu](https://github.com/whatwewant/action-robot-feishu/workflows/test/badge.svg)
+
+An simple github action robot for feishu notification.
+
 ### Usage
+
+| option | required | description            |
+| ------ | -------- | ---------------------- |
+| url    | true     | feishu bot webhook url |
+| title  | true     | title                  |
+| text   | true     | text content           |
+
+### Example
 
 ```yml
 name: CI
@@ -22,6 +35,12 @@ jobs:
             compare: ${{ github.event.compare }}
             job status: ${{ job.status }}
 ```
+
+### TODO
+
+- [x] support send text message
+- [x] support send rich message
+- [ ] support `@` somebody in group
 
 ### License
 
