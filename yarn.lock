@@ -1281,6 +1281,44 @@
     "@zcorky/is" "^1.0.6"
     "@zodash/match" "^0.1.6"
 
+"@zodash/nobot-dingtalk@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.nlark.com/@zodash/nobot-dingtalk/download/@zodash/nobot-dingtalk-0.0.4.tgz#89a8a0a897cc4c9e0829a9534e332c5806a7c6a6"
+  integrity sha1-iaigqJfMTJ4IKalTTjMsWAanxqY=
+  dependencies:
+    "@zodash/doreamon" "^0.4.51"
+
+"@zodash/nobot-feishu@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.nlark.com/@zodash/nobot-feishu/download/@zodash/nobot-feishu-0.1.1.tgz#6d4a93a2f7c7c94466c654ca6ecbceea13297c91"
+  integrity sha1-bUqTovfHyURmxlTKbsvO6hMpfJE=
+  dependencies:
+    "@zodash/doreamon" "^0.4.51"
+
+"@zodash/nobot-slack@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.nlark.com/@zodash/nobot-slack/download/@zodash/nobot-slack-0.0.1.tgz#7a99ad1c54e9c38ba133defec83928fda42c306a"
+  integrity sha1-epmtHFTpw4uhM97+yDko/aQsMGo=
+  dependencies:
+    "@zodash/doreamon" "^0.4.51"
+
+"@zodash/nobot-wecom@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.nlark.com/@zodash/nobot-wecom/download/@zodash/nobot-wecom-0.0.2.tgz#ad67f34fb0060381b27c577c75e84d3a3ff5416b"
+  integrity sha1-rWfzT7AGA4GyfFd8dehNOj/1QWs=
+  dependencies:
+    "@zodash/doreamon" "^0.4.51"
+
+"@zodash/nobot@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.nlark.com/@zodash/nobot/download/@zodash/nobot-0.0.1.tgz#106a8aa415cc6d03a29a914eea01685c02bcc2ba"
+  integrity sha1-EGqKpBXMbQOimpFO6gFoXAK8wro=
+  dependencies:
+    "@zodash/nobot-dingtalk" "^0.0.4"
+    "@zodash/nobot-feishu" "^0.1.1"
+    "@zodash/nobot-slack" "^0.0.1"
+    "@zodash/nobot-wecom" "^0.0.2"
+
 "@zodash/omit@^1.1.6":
   version "1.1.6"
   resolved "https://registry.nlark.com/@zodash/omit/download/@zodash/omit-1.1.6.tgz#ee16589ee4834a9df50fc3885de56f72943a0f75"

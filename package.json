@@ -28,7 +28,7 @@
     "@actions/core": "^1.2.7",
     "@actions/github": "^5.0.0",
     "@zcorky/tsconfig": "^0.0.3",
-    "@zodash/doreamon": "^0.4.51"
+    "@zodash/nobot": "^0.0.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
